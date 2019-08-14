@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Paypal_InContext",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Displays a PayPal in-context checkout window with the merchant website in the background",
+    "authors": [
+    {
+        "name": "Tikhonov Alex",
+        "email": "tihonov.sania@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
