@@ -11,7 +11,9 @@
 	</default>
 	<checkout_onepage_index>
 		<reference name="checkout.onepage.payment">
-			<action method="setTemplate"><template>incontext/onepage/payment.phtml</template></action>
+			<action method="setTemplate">
+                <template>incontext/onepage/payment.phtml</template>
+            </action>
 		</reference>
 	</checkout_onepage_index>
 </layout>

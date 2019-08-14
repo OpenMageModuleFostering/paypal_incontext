@@ -19,7 +19,6 @@ class Paypal_InContext_Block_Js extends Mage_Core_Block_Template{
         if (Mage::getStoreConfig('payment/incontext/sandbox')){
             $environment = 'sandbox';
         }
-        
         if (empty($merchantId)){
             $isActive = false;
         }

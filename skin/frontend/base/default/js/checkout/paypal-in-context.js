@@ -70,7 +70,6 @@ window.paypalCheckoutReady = function() {
 		button: IDS,
 		click: function (e) { 
 			e.preventDefault();
-            console.log('express button click');
 			if ($('paypal-save-button')!=undefined){
 				if (payment.currentMethod!='paypal_express' && payment.currentMethod!='paypaluk_express'){
 					return;
