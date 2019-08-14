@@ -47,16 +47,17 @@ window.paypalCheckoutReady = function() {
 	if (typeof(PayPalLightboxConfig)=="undefined"){
 		return;
 	}
+	if(typeof(PayPalLightboxConfig) != "object"){
+		PayPalLightboxConfig = JSON.parse(PayPalLightboxConfig);
+	}
 	if (PayPalLightboxConfig.isActive==0){
 		return;
 	}
 	
 	if (typeof(IDS)=="undefined"){
+		IDS = new Array();
 		if ($('paypal-save-button')!=undefined){
-			IDS = new Array();
 			IDS.push('paypal-save-button');
-		}else{
-			return;
 		}
 	}else{
 		if ($('paypal-save-button')!=undefined){
@@ -141,7 +142,9 @@ document.observe("dom:loaded", function() {
 		return ;
 	}
 	if (typeof(PayPalLightboxConfig)!="undefined"){
-		PayPalLightboxConfig = JSON.parse(PayPalLightboxConfig);
+		if(typeof(PayPalLightboxConfig) != "object"){
+			PayPalLightboxConfig = JSON.parse(PayPalLightboxConfig);
+		}
 		if (PayPalLightboxConfig.isActive==0){
 			return;
 		}

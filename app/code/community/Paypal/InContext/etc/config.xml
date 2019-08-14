@@ -2,7 +2,7 @@
 <config>
 	 <modules>
         <Paypal_InContext>
-            <version>0.1.9</version>
+            <version>2.0.0</version>
         </Paypal_InContext>
     </modules>
     
